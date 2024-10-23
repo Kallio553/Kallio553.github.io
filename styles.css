@@ -1,16 +1,16 @@
 body {
     background-color: #6C757D;
-    padding-top: 25%;
+    padding-top: 10%;
 }
 
 .input-group {
     margin: auto;
-    width: 80%;
+    width: 70%;
 }
 
 .btn {
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 .btn-light {
