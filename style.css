@@ -1,0 +1,19 @@
+body {
+    background-color: #6C757D;
+    padding-top: 25%;
+}
+
+.input-group {
+    margin: auto;
+    width: 80%;
+}
+
+.btn {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.btn-light {
+    background-color: #E9ECEF;
+    border-color: #E9ECEF;
+}
