@@ -20,7 +20,7 @@
 <body>
     <div class="input-group mb-5">
         <input id="originalText" type="text" class="form-control" placeholder="" aria-label=""
-            aria-describedby="basic-addon2">
+            aria-describedby="basic-addon2" onfocus="this.select();">
         <div class="input-group-append">
             <!--<button class="btn btn-light" type="button">Beillesztés</button>-->
             <button class="btn btn-light" type="button" onclick="convertText()"><i class="bi bi-type"></i></button>
@@ -29,7 +29,7 @@
 
     <div class="input-group">
         <input id="moddedText" type="text" class="form-control" placeholder="" aria-label=""
-            aria-describedby="basic-addon2">
+            aria-describedby="basic-addon2" onfocus="this.select();">
         <div class="input-group-append">
             <button class="btn btn-light" type="button" onclick="copyToClipboard()"><i
                     class="bi bi-clipboard"></i></button>
