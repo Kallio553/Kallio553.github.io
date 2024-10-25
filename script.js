@@ -17,3 +17,8 @@ function copyToClipboard() {
     copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
 }
+
+function clearAll() {
+    document.getElementById('originalText').value = "";
+    document.getElementById('moddedText').value = "";
+}
