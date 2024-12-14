@@ -3,9 +3,9 @@ function convertText() {
 
     const removeAccent = string.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     const replaceSpecialCharWithDash = removeAccent.replace(/[^a-zA-Z0-9]/g, "-");
-    const removeUnwantedDashes = replaceSpecialCharWithDash.replace(/--+/g, '-');
-    const removeLastDash = removeUnwantedDashes.replace(/-$/, "");
-    const toLowerCase = removeLastDash.toLowerCase();
+    const removeUnwantedDashes = replaceSpecialCharWithDash.replace(/-+/g, '-');
+    const removeStartOrEndDash = removeUnwantedDashes.replace(/^-|-$/g, "");
+    const toLowerCase = removeStartOrEndDash.toLowerCase();
     const result = toLowerCase;
 
     document.getElementById("moddedText").value = result;
