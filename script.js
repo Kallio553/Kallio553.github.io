@@ -5,7 +5,7 @@ function convertText() {
         .normalize("NFD")
         .replace(/[\u00AD\u200B-\u200D\u2060\uFEFF]/g, "")
         .replace(/[\u0300-\u036f]/g, "");
-    const replaceSpecialCharWithDash = removeAccent.replace(/[^\p{L}\p{N}]/gu, "-");
+    const replaceSpecialCharWithDash = removeAccent.replace(/[^a-zA-Z0-9]/g, "-");
     const removeUnwantedDashes = replaceSpecialCharWithDash.replace(/-+/g, '-');
     const removeStartOrEndDash = removeUnwantedDashes.replace(/^-|-$/g, "");
     const toLowerCase = removeStartOrEndDash.toLowerCase();
