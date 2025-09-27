@@ -257,7 +257,7 @@ function scrollToTop() {
     document.getElementById('dropdownMenu').value = "";
     document.getElementById('productName').value = "";
     document.getElementById('productDescription').value = "";
-    document.getElementById('editorMainXml').value = "";
-    document.getElementById('editorInLinks').value = "";
-    document.getElementById('editorPrompt').value = "";
+    editorMainXml.setValue("", -1);
+    editorInLinks.setValue("", -1);
+    editorPrompt.setValue("", -1);
 }
