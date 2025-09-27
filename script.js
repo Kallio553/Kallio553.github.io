@@ -224,6 +224,13 @@ function copyPrompt() {
         alert("A prompt mező üres!");
         return;
     }
+
+    // Copy to clipboard
+    navigator.clipboard.writeText(content)
+        .catch(err => {
+            console.error("Másolási hiba:", err);
+            alert("Nem sikerült a másolás.");
+        });
 }
 
 function scrollToTop() {
