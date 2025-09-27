@@ -126,6 +126,21 @@ window.addEventListener('DOMContentLoaded', () => {
         const height = textarea.getBoundingClientRect().height;
         localStorage.setItem("productDescriptionHeight", height + "px");
     });
+
+    // Restore editorMainXml height
+    const editorMainXmlContainer = document.getElementById("editorMainXml");
+    const savedEditorHeight = localStorage.getItem("editorMainXmlHeight");
+    if (savedEditorHeight) {
+        editorMainXmlContainer.style.height = savedEditorHeight;
+        editorMainXml.resize(); // tell Ace to adjust to new height
+    }
+
+    // Save editorMainXml height on resize
+    editorMainXmlContainer.addEventListener("mouseup", () => {
+        const height = editorMainXmlContainer.getBoundingClientRect().height;
+        localStorage.setItem("editorMainXmlHeight", height + "px");
+        editorMainXml.resize();
+    });
 });
 
 /* Update content depending on what is selected from the dropdown menu */
@@ -238,4 +253,11 @@ function scrollToTop() {
         top: 0,
         behavior: "smooth" // smooth scrolling effect
     });
+
+    document.getElementById('dropdownMenu').value = "";
+    document.getElementById('productName').value = "";
+    document.getElementById('productDescription').value = "";
+    document.getElementById('editorMainXml').value = "";
+    document.getElementById('editorInLinks').value = "";
+    document.getElementById('editorPrompt').value = "";
 }
