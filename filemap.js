@@ -1,7 +1,7 @@
 const fileMap = {
     "Fleshlight":                                       "xml/base/fleshlight.xml",
     "Férfi örömszerző":                                 "",
-    "......Művagina, maszturbátor":                     "xml/base/_base.xml",
+    "......Művagina, maszturbátor":                     "xml/base/base.xml",
     "......Péniszgyűrű":                                "xml/base/_base.xml",
     "......Péniszköpeny / péniszhosszabbító":           "xml/base/_base.xml",
     "......Péniszmandzsetta":                           "xml/base/_base.xml",
