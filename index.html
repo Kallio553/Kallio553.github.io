@@ -13,36 +13,73 @@
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title></title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="tabs">
+        <button class="tab-button active" onclick="showTab('tab1')">Tab 1</button>
+        <button class="tab-button" onclick="showTab('tab2')">Tab 2</button>
+    </div>
+
+    <div id="tab1" class="tab-content active">
         <div class="row">
             <div class="col text-center">
                 <button class="btn btn-danger mb-4" type="button" onclick="clearAll()"><i
                         class="bi bi-x-circle"></i></button>
             </div>
         </div>
-    </div>
 
-    <div class="input-group mb-5">
-        <input id="originalText" type="text" class="form-control" placeholder="" aria-label=""
-            aria-describedby="basic-addon2" onfocus="this.select();">
-        <div class="input-group-append">
-            <!--<button class="btn btn-light" type="button">Beillesztés</button>-->
-            <button class="btn btn-light" type="button" onclick="convertText()"><i class="bi bi-type"></i></button>
+        <div class="input-group mb-5">
+            <input id="originalText" type="text" class="form-control" placeholder="" aria-label=""
+                aria-describedby="basic-addon2" onfocus="this.select();">
+            <div class="input-group-append">
+                <button class="btn btn-light" type="button" onclick="convertText()"><i class="bi bi-type"></i></button>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <input id="moddedText" type="text" class="form-control" placeholder="" aria-label=""
+                aria-describedby="basic-addon2" onfocus="this.select();">
+            <div class="input-group-append">
+                <button class="btn btn-light" type="button" onclick="copyToClipboard()"><i
+                        class="bi bi-clipboard"></i></button>
+            </div>
         </div>
     </div>
 
-    <div class="input-group">
-        <input id="moddedText" type="text" class="form-control" placeholder="" aria-label=""
-            aria-describedby="basic-addon2" onfocus="this.select();">
-        <div class="input-group-append">
-            <button class="btn btn-light" type="button" onclick="copyToClipboard()"><i
-                    class="bi bi-clipboard"></i></button>
+    <div id="tab2" class="tab-content">
+        <div class="text-center mb-4">
+            <select id="dropdownMenu" onchange="updateDropdownContent(); updateDropdownContentInLinks();"></select>
         </div>
+
+        <div class="text-center mb-4">
+            <label for="productName">Termék neve:</label><br>
+            <input type="text" id="productName" class="form-control mb-3" />
+
+            <label for="productDescription">Leírás a termékről:</label><br>
+            <textarea id="productDescription" class="form-control" rows="10"></textarea>
+        </div>
+
+        <div id="editorMainXml"></div>
+        <div id="editorInLinks"></div>
+
+        <div class="row my-3">
+            <div class="col text-center">
+                <button class="btn btn-success mx-2" type="button" onclick="generatePrompt()">
+                    <i class="bi bi-arrow-right-circle"></i> Go
+                </button>
+                <button class="btn btn-primary mx-2" type="button" onclick="copyPrompt()">
+                    <i class="bi bi-arrow-right-circle"></i> Másolás
+                </button>
+                <button class="btn btn-dark mx-2" type="button" onclick="scrollToTop()">
+                    <i class="bi bi-arrow-up-circle"></i> Oldal tetejére
+                </button>
+            </div>
+        </div>
+
+        <div id="editorPrompt"></div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -57,8 +94,11 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.43.3/ace.js"></script>
+
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script src="filemap.js"></script>
 </body>
 
 </html>
