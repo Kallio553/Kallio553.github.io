@@ -11,7 +11,8 @@
     <formatRestrictions>
       <item>TILOS használni ikonokat, csillag karaktereket, Markdown formázást (pl. *, **)</item>
       <item>Kerüld a harmadik személyű megszólítást</item>
-      <item>Csak a metrikus rendszert használd. Az imperiális rendszer mértékegységeit konvertáld át metrikus mértékegységekre.</item>
+      <item>Csak a metrikus rendszert használd. Az imperiális rendszer mértékegységeit konvertáld át
+        metrikus mértékegységekre.</item>
     </formatRestrictions>
   </rules>
 
@@ -25,7 +26,8 @@
       <tag>h2</tag>
       <title>Mit érdemes tudni róla?</title>
       <tag>ul</tag>
-      <li>Írj kreatív, informatív, minden lényeges tartalmi elemet belefoglaló, keresőkre optimalizált szöveget, pontokba szedve, a termék nevét is belefoglalva.</li>
+      <li>Írj kreatív, informatív, minden lényeges tartalmi elemet belefoglaló, keresőkre
+        optimalizált szöveget, pontokba szedve, a termék nevét is belefoglalva.</li>
     </section>
 
     <section>
@@ -45,15 +47,17 @@
       <tag>h2</tag>
       <title>Mire figyelj?</title>
       <tag>ul</tag>
-      <li>Karbantartási információk. Mire kell figyelni, hogy a termék ne károsodjon. Hogyan kell ápolni, hogyan kell tisztítani, milyen síkosítóval használható (ha kell hozzá), stb.
-      - Ha odaillő, használj felszólító mondatot.</li>
+      <li>Karbantartási információk. Mire kell figyelni, hogy a termék ne károsodjon. Hogyan kell
+        ápolni, hogyan kell tisztítani, milyen síkosítóval használható (ha kell hozzá), stb. - Ha
+        odaillő, használj felszólító mondatot.</li>
     </section>
 
     <section>
       <tag>h2</tag>
       <title>A termék tulajdonságai:</title>
       <tag>ul</tag>
-      <li>Rövid, pontszerű, a termékről ismert általános jellemzők, tulajdonságok. Például: anyag, méretek, kiszerelés, szín, funkciók, stb. Minden tulajdonság külön pontba.</li>
+      <li>Rövid, pontszerű, a termékről ismert általános jellemzők, tulajdonságok. Például: anyag,
+        méretek, kiszerelés, szín, funkciók, stb. Minden tulajdonság külön pontba.</li>
     </section>
 
     <section>
@@ -66,21 +70,25 @@
     <section>
       <tag>p</tag>
       <content>
-        <strong>Egy figyelemfelkeltő befejezés, amely vásárlásra inspirál és hangsúlyozza, hogy a webáruházban könnyen beszerezhető a termék. Emellett nem kell félni a kíváncsi
-        tekintetektől, mert a csomagolás mindig diszkrét.</strong>
+        <strong>Egy figyelemfelkeltő befejezés, amely vásárlásra inspirál és hangsúlyozza, hogy a
+          webáruházban könnyen beszerezhető a termék. Emellett nem kell félni a kíváncsi
+          tekintetektől, mert a csomagolás mindig diszkrét.</strong>
       </content>
     </section>
   </structure>
 
   <linkingRules>
-    <rule>Ha a szövegben szerepel bármelyik alábbi kulcsszó, annak szinonimája vagy természetes nyelvi változata (pl. ragozott, összetett alak), linkeld a hozzá tartozó URL-re.</rule>
+    <rule>Ha a szövegben szerepel bármelyik alábbi kulcsszó, annak szinonimája vagy természetes
+      nyelvi változata (pl. ragozott, összetett alak), linkeld a hozzá tartozó URL-re.</rule>
     <rule>HTML "<a href target="_blank">" formátum</rule>
     <rule>Ha a kulcsszó több szóból áll, mindig a teljes kifejezést linkeld, ne csak egy részét.</rule>
-    <rule>Ha több kulcsszó is illeszkedhet (pl. „síkosító” és „vízbázisú síkosító”), a leghosszabb, legpontosabb változatot linkeld.</rule>
+    <rule>Ha több kulcsszó is illeszkedhet (pl. „síkosító” és „vízbázisú síkosító”), a leghosszabb,
+      legpontosabb változatot linkeld.</rule>
     <rule>A rövidebb kulcsszót akkor linkeld, ha a hosszabbat már linkelted.</rule>
     <rule>Egy kulcsszót csak egyszer linkelj</rule>
     <keywords>
-    
+
+      
     </keywords>
   </linkingRules>
 
@@ -89,7 +97,8 @@
       <productName>
       </productName>
     </field>
-    <instruction>Elemezd az alábbi szöveget és gyűjts információkat, tulajdonságokat, specifikációkat a termékről:
+    <instruction>Elemezd az alábbi szöveget és gyűjts információkat, tulajdonságokat,
+      specifikációkat a termékről:
       <text>
       </text>
     </instruction>
